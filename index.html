@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions Regenerative Medicine</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="Website-Logo (1).jpg" alt="Logo" />
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav id="navMenu">
+      <a href="#">Home</a>
+
+      <div class="dropdown">
+        <a href="#services">Services</a>
+        <div class="dropdown-content">
+          <a href="Services.html">Foundations of Health</a>
+          <a href="injection.html">Injections</a>
+          <a href="Phisical-Medicine.html">Physical Medicine</a>
+          <a href="phsiomodalities.html">Physiomodalities</a>
+          <a href="chinese-medicine.html">Chinese Medicine</a>
+          <a href="Aesthetic.html">Aesthetics</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#about">About</a>
+        <div class="dropdown-content">
+          <a href="abt-philosophy.html">My Naturopathic Philosophy</a>
+          <a href="Mareshah.html">Mareshah Dunning, NMD</a>
+          <a href="pricing.html">Pricing
+        </div>
+        </a>
+      </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#blogs">Blogs</a>
+         <!-- <div class="dropdown-content">
+           <a href="#b1">Foundation of health (Exercise)</a>
+          <a href="#b2">Foundation of health (Diet)</a>
+          <a href="#b3">Regenerative Medicine</a>
+          <a href="#b4">Mind Body</a>
+          <a href="#b5">Supplements and Medications</a>
+          <a href="#b5">Diseases</a>
+        </div> -->
+      </div>
+
+      <a href="contact.html">Contact</a>
+      <a href="Disclaimer.html">Disclaimer</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="features">
+      <p>
+        <i class="fas fa-shield-alt" style="color: var(--blue);"></i> Science-Backed
+        &nbsp;&nbsp;
+        <i class="fas fa-heart" style="color: var(--gold);"></i> Holistic Care
+        &nbsp;&nbsp;
+        <i class="fas fa-star" style="color: var(--blue);"></i> Expert Led
+      </p>
+    </div>
+    <h1>Pain Relief, <span>Naturally</span> & <br />Effectively</h1>
+    <p>Reclaim your life with science-backed, non-invasive treatments tailored to your healing journey.</p>
+
+    <div class="hero-buttons">
+      <a href="https://calendar.google.com/calendar/appointments/AcZssZ3KXUUR-HD4ceIrjLKuW3GlxNaqF24sFbkhqQ8=" class="book-btn"><i class="fas fa-calendar-check"></i> Book a Consultation</a>
+    </div>
+    <div class="hero-buttons">
+      <a href="tel:+14804221662" class="call-btn"><i class="fas fa-phone"></i> Call Now</a>
+    </div>
+
+    <!-- <div class="phone-box">
+      <p><i class="fas fa-phone"></i> <a href="tel:+14804221662">Call +1 480 422-1662</a>
+      </p>
+      <p class="pp">Available Mon–Fri 8AM–6PM</p>
+    </div> -->
+  </section>
+
+
+  <section class="healing-section">
+    <h2>
+      Healing <span>with Purpose</span>
+    </h2>
+    <p class="healing-subtext">
+      At Solutions Regenerative Medicine, we combine traditional wisdom with cutting-edge
+      science to restore your body's natural healing capacity and help you reclaim your vitality.
+    </p>
+
+    <div class="healing-cards">
+      <div class="healing-card blue-card">
+        <div class="icon"><i class="fas fa-heart"></i></div>
+        <h3>Compassionate Care</h3>
+        <p>Every treatment is personalized to your unique healing journey</p>
+      </div>
+
+      <div class="healing-card gold-card">
+        <div class="icon"><i class="fas fa-brain"></i></div>
+        <h3>Science-Based</h3>
+        <p>Evidence-based treatments backed by modern research</p>
+      </div>
+
+      <div class="healing-card blue-card">
+        <div class="icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Non-Invasive</h3>
+        <p>Gentle, effective treatments without surgery or harmful side effects</p>
+      </div>
+
+      <div class="healing-card gold-card">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <h3>Holistic Approach</h3>
+        <p>Treating the whole person, not just symptoms</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="mission-section">
+    <div class="mission-container">
+      <h2 class="mission-title">Our Mission</h2>
+      <p class="mission-text">
+        We believe in the body's innate ability to heal itself when given the right tools and support.
+        Our integrated approach combines the best of traditional healing modalities with modern regenerative
+        medicine to restore health, reduce pain, and optimize your overall well-being.
+      </p>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="treatment-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="text-blue">Comprehensive</span>
+        <span class="text-gold">Treatment</span>
+        <span class="text-black">Options</span>
+      </h2>
+      <p class="section-subtitle">
+        Our integrated approach addresses all aspects of your health, combining the best of traditional and modern
+        healing modalities.
+      </p>
+
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="card card-blue">
+          <div class="card-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Foundations of Health</h3>
+          <ul>
+            <li>Nutritional Analysis</li>
+            <li>Lifestyle Optimization</li>
+            <li>Supplement Protocols</li>
+            <li>Hormone Balance</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card-gold">
+          <div class="card-icon"><i class="fas fa-syringe"></i></div>
+          <h3>Injections</h3>
+          <ul>
+            <li>PRP Therapy</li>
+            <li>Stem Cell Therapy</li>
+            <li>Prolotherapy</li>
+            <li>Trigger Point Injections</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card card-blue">
+          <div class="card-icon"><i class="fas fa-dumbbell"></i></div>
+          <h3>Physical Medicine</h3>
+          <ul>
+            <li>Manual Therapy</li>
+            <li>Corrective Exercise</li>
+            <li>Postural Restoration</li>
+            <li>Movement Analysis</li>
+          </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card card-gold">
+          <div class="card-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Physio Modalities</h3>
+          <ul>
+            <li>Laser Therapy</li>
+            <li>Ultrasound</li>
+            <li>Electrical Stimulation</li>
+            <li>Compression Therapy</li>
+          </ul>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card card-blue">
+          <div class="card-icon"><i class="fas fa-spa"></i></div>
+          <h3>Chinese Medicine</h3>
+          <ul>
+            <li>Acupuncture</li>
+            <li>Herbal Medicine</li>
+            <li>Cupping Therapy</li>
+            <li>Meridian Balancing</li>
+          </ul>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card card-gold">
+          <div class="card-icon"><i class="fas fa-magic"></i></div>
+          <h3>Aesthetics</h3>
+          <ul>
+            <li>Facial Rejuvenation</li>
+            <li>Skin Tightening</li>
+            <li>Anti-Aging Treatments</li>
+            <li>Cosmetic Injections</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="consultation-section">
+    <div class="consultation-box">
+      <h2 class="consultation-title">Ready to Start Your Healing Journey?</h2>
+      <p class="consultation-subtitle">
+        Schedule a consultation to discover which treatments are right for you.
+        Our expert team will create a personalized plan for your unique needs.
+      </p>
+      <div class="consultation-buttons">
+        <a href="https://calendar.google.com/calendar/appointments/AcZssZ3KXUUR-HD4ceIrjLKuW3GlxNaqF24sFbkhqQ8=" class="btn primary-btn">
+          Book Consultation <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="doctor-section">
+    <div class="doctor-header">
+      <h2><span class="blue">Meet Our</span> <span class="gold">Expert</span></h2>
+      <p>Leading the way in regenerative medicine with expertise, compassion, and a commitment to your healing journey.
+      </p>
+    </div>
+
+    <div class="doctor-container">
+      <div class="doctor-image">
+        <img src="belli-img.jpeg" alt="Dr. Mareshah Dunning" />
+      </div>
+
+      <div class="doctor-details">
+        <h3>Dr. Mareshah Dunning</h3>
+        <p class="credentials">NMD, RMSK</p>
+        <p class="bio">
+          Dr. Dunning is a pioneering naturopathic physician specializing in regenerative medicine and holistic healing
+          approaches. With over 15 years of experience, she combines traditional healing wisdom with cutting-edge
+          medical technology to provide comprehensive, personalized care.
+        </p>
+
+        <div class="boxes">
+          <div class="box light-blue">
+            <h4><i class="fas fa-certificate"></i> Credentials & Certifications</h4>
+            <ul>
+              <li>Doctor of Naturopathic Medicine (NMD)</li>
+              <li>Registered Musculoskeletal Sonographer (RMSK)</li>
+              <li>Board Certified in Regenerative Medicine</li>
+              <li>Advanced Training in PRP and Stem Cell Therapy</li>
+              <li>Certified in Aesthetic Medicine</li>
+              <li>Licensed Acupuncturist</li>
+            </ul>
+          </div>
+
+          <div class="box light-gold">
+            <h4><i class="fas fa-stethoscope"></i> Areas of Expertise</h4>
+            <ul>
+              <li>Regenerative Medicine</li>
+              <li>Sports Medicine</li>
+              <li>Functional Medicine</li>
+              <li>Pain Management</li>
+              <li>Aesthetic Medicine</li>
+              <li>Integrative Wellness</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><i class="fas fa-user-md"></i><span>500+</span>
+            <p>Patients Treated</p>
+          </div>
+          <div class="stat"><i class="fas fa-calendar"></i><span>15+</span>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat"><i class="fas fa-chart-line"></i><span>95%</span>
+            <p>Success Rate</p>
+          </div>
+        </div>
+
+        <a href="https://calendar.google.com/calendar/appointments/AcZssZ3KXUUR-HD4ceIrjLKuW3GlxNaqF24sFbkhqQ8=" 
+   target="_blank" 
+   class="consult-btn">
+  <i class="fas fa-calendar-check"></i> Schedule Consultation
+</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <div class="section-wrapper">
+    <h2 class="section-title">
+      <span class="highlight-blue">Patient</span> <span class="highlight-yellow">Success</span> <span>Stories</span>
+    </h2>
+    <p class="subtitle-text">
+      Real stories from real patients who have transformed their lives through our regenerative medicine treatments.
+    </p>
+
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-box">
+        <div class="rating-stars">★★★★★</div>
+        <div class="review-quote">
+          "After years of pain, Dr. Dunning's regenerative treatments have given me my life back. I can finally enjoy
+          activities with my grandchildren again."
+        </div>
+        <div class="review-author">
+          <div class="author-icon">SJ</div>
+          <div class="author-details">
+            <span class="author-name">Sarah Johnson</span>
+            <span class="author-issue">Chronic Back Pain</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-box">
+        <div class="rating-stars">★★★★★</div>
+        <div class="review-quote">
+          "The PRP therapy was incredible. No surgery needed and I'm back to running marathons. The whole team is
+          professional and caring."
+        </div>
+        <div class="review-author">
+          <div class="author-icon">MC</div>
+          <div class="author-details">
+            <span class="author-name">Michael Chen</span>
+            <span class="author-issue">Knee Injury</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-box">
+        <div class="rating-stars">★★★★★</div>
+        <div class="review-quote">
+          "The holistic approach addressed not just my symptoms but the root cause. I have energy I haven't felt in
+          years."
+        </div>
+        <div class="review-author">
+          <div class="author-icon">ER</div>
+          <div class="author-details">
+            <span class="author-name">Emma Rodriguez</span>
+            <span class="author-issue">Chronic Fatigue</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="review-box">
+        <div class="rating-stars">★★★★★</div>
+        <div class="review-quote">
+          "Revolutionary treatment! The combination of traditional and modern medicine is exactly what I needed. Highly
+          recommend!"
+        </div>
+        <div class="review-author">
+          <div class="author-icon">DT</div>
+          <div class="author-details">
+            <span class="author-name">David Thompson</span>
+            <span class="author-issue">Shoulder Pain</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-section">
+      <div class="stat-item">
+        <h3>500+</h3>
+        <p>Patients Treated</p>
+      </div>
+      <div class="stat-item">
+        <h3 style="color:#f5c45d;">95%</h3>
+        <p>Success Rate</p>
+      </div>
+      <div class="stat-item">
+        <h3>15+</h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-item">
+        <h3 style="color:#f5c45d;">4.9</h3>
+        <p>Average Rating</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <section class="faq-section">
+    <h2 class="faq-title">
+      <span class="blue">Frequently</span> <span class="yellow">Asked</span> <span>Questions</span>
+    </h2>
+    <p class="faq-subtext">Get answers to common questions about regenerative medicine and our treatment approaches.</p>
+
+    <div class="faq-container">
+
+      <!-- Item 1 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          What is regenerative medicine?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Regenerative medicine focuses on restoring or establishing normal function by repairing or replacing damaged
+          tissues and organs.
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          How does PRP therapy work?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Platelet-Rich Plasma (PRP) therapy uses your own blood components to promote healing of injured tendons,
+          ligaments, muscles, and joints.
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          Are regenerative treatments safe?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Yes, when performed by licensed professionals, regenerative treatments are generally safe and minimally
+          invasive.
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          What conditions can be treated?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Conditions like joint pain, arthritis, tendon injuries, and chronic inflammation can be effectively treated
+          using regenerative techniques.
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          How long does it take to see results?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Results vary by patient, but improvement can often be seen within a few weeks, with continued benefits over
+          time.
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          Is treatment covered by insurance?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Some regenerative treatments may not be covered under traditional insurance plans. Please consult with your
+          provider.
+        </div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          How many treatments will I need?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          The number of sessions depends on your condition and response to the initial treatment. Most require 1–3
+          sessions.
+        </div>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          What should I expect during treatment?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Treatments are typically outpatient and minimally invasive, with mild soreness that resolves within days.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section class="cta-wrapper">
+    <h2 class="cta-title">Still Have Questions?</h2>
+    <p class="cta-text">
+      Our team is here to help you understand your treatment options. Don't hesitate to reach out for personalized
+      answers.
+    </p>
+    <div class="cta-buttons">
+      <a href="tel:+14804221662" class="cta-button">
+        <i>📞</i> Call +1 480 422-1662
+      </a>
+      <!-- <a href="#live-chat" class="cta-button">
+        <i>💬</i> Live Chat
+      </a> -->
+    </div>
+  </section>
+
+
+
+
+  <section class="contact-wrapper">
+    <h1 class="section-title"><span class="text-blue">Get In</span> <span class="text-gold">Touch</span></h1>
+    <p class="contact-subtitle">Ready to take the first step toward pain-free living? Contact us today to schedule your
+      consultation.</p>
+
+    <div class="contact-container">
+      <!-- Left Panel -->
+      <div class="contact-details-box">
+        <h2 class="details-title">Contact Information</h2>
+        <div class="contact-data">
+          <p class="info-item"><i class="fas fa-phone info-icon"></i> <span
+              class="info-text"><strong>Phone</strong><br><a href="tel:+14804221662">+1 480 422-1662</a></span></p>
+          <p class="info-item"><i class="fas fa-map-marker-alt info-icon"></i> <span
+              class="info-text"><strong>Location</strong><br>Premium Medical Center<br>Phoenix, Arizona</span></p>
+          <p class="info-item"><i class="fas fa-envelope info-icon"></i> <span
+              class="info-text"><strong>Email</strong><br>info@solutionsregenerative <br>medicine.com</span></p>
+        </div>
+
+        <div class="button-group"><a href="https://calendar.google.com/calendar/appointments/AcZssZ3KXUUR-HD4ceIrjLKuW3GlxNaqF24sFbkhqQ8=">
+          <button class="btn-primary">📅 Book Online</button></a>
+          <!-- <button class="btn-secondary">💬 Live Chat</button> -->
+        </div>
+      </div>
+
+      <!-- Right Form -->
+      <!-- <form class="form-box" action="sendmail.php" method="POST">
+        <h2 class="form-title">Schedule Your Consultation</h2>
+        <div class="form-grid">
+          <input type="text" name="first_name" placeholder="First Name" required class="input-field" />
+          <input type="text" name="last_name" placeholder="Last Name" required class="input-field" />
+        </div>
+        <input type="email" name="email" placeholder="Email Address" required class="input-field" />
+        <input type="text" name="phone" placeholder="Phone Number" required class="input-field" />
+        <select name="service" required class="input-field">
+          <option value="">Select a service...</option>
+          <option value="Injections">Injections</option>
+          <option value="Physical Medicine">Physical Medicine</option>
+          <option value="Chinese Medicine">Chinese Medicine</option>
+          <option value="Aesthetics">Aesthetics</option>
+        </select>
+        <textarea name="message" placeholder="Tell us about your health concerns and how we can help..." required
+          class="input-field"></textarea>
+        <button type="submit" class="btn-submit">Send Message 📩</button>
+      </form> -->
+    </div>
+  </section>
+
+
+
+
+  <section class="location-section">
+    <div class="location-container">
+      <h3 class="location-title">
+        <i class="fas fa-location-dot location-icon"></i>
+        <span class="location-text-blue">Find Us</span>
+      </h3>
+
+      <div class="clinic-box">
+        <div class="clinic-content">
+          <i class="fas fa-map-marker-alt clinic-pin"></i>
+          <h4 class="clinic-heading">Visit Our Clinic</h4>
+          <p class="clinic-desc">Conveniently located in Phoenix, Arizona</p>
+
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851140.1962960511!2d-112.68051978819769!3d33.55944540644261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x678031bf5248c893%3A0xd464f8847f38c55e!2sSolutions%20Regenerative%20Medicine!5e0!3m2!1sen!2sin!4v1752948046968!5m2!1sen!2sin"
+              width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <a href="https://maps.app.goo.gl/mD7uMHaUAbSgfbbJ6" target="_blank" class="clinic-btn">
+            <i class="fas fa-location-arrow"></i> Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <!-- Left: Clinic Info -->
+      <div class="footer-column">
+        <h3 class="footer-title gold">Solutions Regenerative Medicine</h3>
+        <p class="footer-text">
+          Combining traditional healing wisdom with cutting-edge science to restore your body's natural healing capacity
+          and help you reclaim your vitality.
+        </p>
+        <ul class="footer-contact">
+          <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+14804221662">+1 480 422-1662</a>
+          </li>
+          <li><i class="fas fa-envelope"></i> info@solutionsregenerativemedicine.com</li>
+          <li><i class="fas fa-location-dot"></i> Premium Medical Center, Phoenix, AZ</li>
+        </ul>
+      </div>
+
+      <!-- Center: Services -->
+      <div class="footer-column">
+        <h4 class="footer-subtitle gold">Our Services</h4>
+        <div class="srv">
+          <a href="Services.html">Foundations of Health</a>
+          <a href="injection.html">Injections</a>
+          <a href="Phisical-Medicine.html">Physical Medicine</a>
+          <a href="phsiomodalities.html">Physio Modalities</a>
+          <a href="chinese-medicine.html">Chinese Medicine</a>
+          <a href="Aesthetic.html">Aesthetics</a>
+        </div>
+      </div>
+
+      <!-- Right: Hours + Buttons -->
+      <div class="footer-column">
+        <!-- <h4 class="footer-subtitle gold">Office Hours</h4> -->
+        <!-- <ul class="footer-hours">
+          <li><i class="fas fa-clock"></i> Mon–Fri: 8:00 AM – 6:00 PM</li>
+          <li><i class="fas fa-clock"></i> Sat: 9:00 AM – 2:00 PM</li>
+          <li><i class="fas fa-clock"></i> Sun: Closed</li>
+        </ul> -->
+
+        <div class="footer-buttons">
+          <a href="https://calendar.google.com/calendar/appointments/AcZssZ3KXUUR-HD4ceIrjLKuW3GlxNaqF24sFbkhqQ8=" class="btn-book"><i class="fas fa-calendar-check"></i> Book Consultation</a>
+          <a href="tel:+14804221662" class="btn-call"><i class="fas fa-phone-volume"></i> Call Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Follow us:</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/SolutionsRegenerativeMedicine" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/solutionsregenerativemedicine" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="http://youtube.com/channel/UCA2Wqx4yUR3gmqxVJNiag1Q" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/mareshah-dunning/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://x.com/SolutionsRegenM" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://pin.it/3nby5z3fP" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

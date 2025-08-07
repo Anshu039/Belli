@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: #ffffff;
+}
+
+.disclaimer-section {
+  background-color: #2A4472;
+  color: #fff;
+  padding: 20px 20px;
+  text-align: start;
+}
+
+.disclaimer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.disclaimer-title {
+  color: #e0b528;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.disclaimer-text {
+  color: #f1f1f1;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .disclaimer-title {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+
+  .disclaimer-text {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}

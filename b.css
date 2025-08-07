@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: #ffffff;
+}
+
+
+.exercise-section {
+    padding: 20px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.exercise-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #c89c00;
+    /* golden yellow */
+    margin-bottom: 20px;
+    text-align: center;
+}
+.exercise-title a {
+    text-decoration: none;
+    color: #c89c00;
+    transition: 0.4s;
+}
+.exercise-title a:hover{
+    color: #1d3050;
+}
+
+.exercise-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.exercise-description {
+    font-size: 1.5rem;
+    color: #1d3050;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .exercise-title {
+        font-size: 1.5rem;
+    }
+
+    .exercise-description {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+
+
+
+
+    .section-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      padding: 5px 20px;
+    }
+
+    .text-block {
+      flex: 1 1 500px;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .text-block .title-heading {
+      color: #1d3050;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .text-block .description-text {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      line-height: 1.6;
+      color: #1d3050;
+    }
+
+    .benefit-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #1d3050;
+      font-size: 1.2em;
+    }
+
+    .benefit-item {
+      margin-bottom: 12px;
+      line-height: 1.5;
+      color: #1d3050;
+    }
+
+    .highlighted-text {
+      color: #c89c00;
+      font-weight: bold;
+    }
+
+    .image-block {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .image-block img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .section-wrapper {
+        flex-direction: column;
+        padding: 20px 10px;
+      }
+
+      .text-block .title-heading {
+        text-align: center;
+      }
+    }

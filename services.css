@@ -1,0 +1,2384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+
+body {
+  font-family: var(--font);
+  color: var(--dark);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: white;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+header h1 {
+  color: #1e3768;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* .content p {
+      padding: rem 1rem;
+    } */
+
+.content p {
+  font-size: larger;
+  margin: 0rem 10rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+.content {
+  background-color: #2A4472;
+  padding: 3rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.content p {
+  margin: 1rem;
+}
+
+.content span:first-child {
+  font-size: 2rem;
+  color: #1e3768;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .content {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .content span:first-child {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+.image-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px 10px;
+  /* Reduced top padding */
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 340px;
+  /* Slightly larger than before */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-section {
+  text-align: center;
+  margin: 20px 0 40px;
+  font-size: 2.8rem;
+  color: #1e3768;
+}
+
+@media (max-width: 768px) {
+  .image-section {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .icon-section{
+    margin-bottom: 0px;
+  }
+
+  .image-section img {
+    max-width: 90%;
+  }
+}
+
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e3768;
+  margin-bottom: 30px;
+}
+
+.section p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  text-align: justify;
+  color: #1e3768;
+}
+
+p span {
+  color: #f5b942;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+  .section{
+    padding-top: 0;
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*for services injection page*/
+
+.injectables-section {
+  background-color: #1e3768;
+  padding: 60px 20px;
+}
+
+.injectables-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.injectables-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #f5b942;
+  margin-bottom: 40px;
+}
+
+.injectables-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.injectables-container p span {
+  font-weight: bold;
+  color: #f5b942;
+}
+
+.injectables-container p::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f5b942;
+}
+
+@media (max-width: 768px) {
+  .injectables-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .injectables-container p {
+    font-size: 1.05rem;
+  }
+}
+
+
+.ortho-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.ortho-title {
+  background: #2A4472;
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 2rem;
+}
+
+.ortho-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.ortho-image img {
+  max-width: 250px;
+  border-radius: 4px;
+}
+
+.ortho-text h3 {
+  color: #2A4472;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.ortho-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2A4472;
+}
+
+.ortho-text p strong {
+  color: #e1b645;
+}
+
+@media (max-width: 768px) {
+  .ortho-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .ortho-title{
+    text-align: start;
+    
+  }
+
+  .ortho-text h3 {
+    text-align: start;
+    
+  }
+  .ortho-text p {
+   text-align: start;
+   line-height: 1.9;
+  }
+
+  .ortho-text p strong {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+
+
+
+/* .bmac-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.bmac-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.bmac-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.bmac-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2A4472;
+}
+
+.bmac-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.bmac-text p strong {
+  color: #e1b645;
+}
+
+.bmac-image {
+  flex: 1;
+  text-align: center;
+}
+
+.bmac-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .bmac-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .bmac-text {
+    text-align: center;
+  }
+
+  .bmac-text p{
+    text-align: start;
+  }
+  .bmac-text p strong{
+    text-align: start;
+  }
+} */
+
+
+
+
+
+.bmac-section {
+  background-color: #fff;
+  /* Light blue background */
+  color: #2B3E55;
+  /* Dark text color */
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.bmac-info .details h3 {
+  color: #f5b942;
+}
+
+
+.bmac-section .title {
+  font-size: 28px;
+  color: #283f55;
+  margin-bottom: 10px;
+  margin-top: 70px;
+}
+
+.bmac-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bmac-info .details {
+  flex: 1;
+}
+
+.bmac-info .details p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.bmac-info .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bmac-info .details ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.bmac-info .procedure-img {
+  flex: 1;
+}
+
+.bmac-info .procedure-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .bmac-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bmac-info .details {
+    text-align: start;
+  }
+
+
+}
+
+
+.procedure-img {
+  justify-content: center;
+  display: flex;
+
+}
+
+.procedure-img img {
+  height: 12rem;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.donor-tissue-section {
+  background-color: #ffffff;
+  color: #2B3E55;
+  padding: 0px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.donor-tissue-section .title {
+  font-size: 28px;
+  color: #283f55;
+  margin-bottom: 10px;
+}
+
+.donor-info .details h3 {
+  color: #f5b942;
+}
+
+.donor-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.donor-info .details {
+  flex: 1;
+}
+
+.donor-info .details p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.donor-info .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.donor-info .details ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.donor-info .procedure-img {
+  flex: 1;
+}
+
+.donor-info .procedure-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .donor-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .donor-info .details p{
+    text-align: start;
+  }
+
+  .donor-info .details {
+    text-align: center;
+  }
+
+  .donor-info .details h3{
+    text-align: start;
+  }
+
+  .donor-info .procedure-img {
+    margin-top: 20px;
+  }
+  .donor-info .details ul{
+    text-align: start;
+  }
+}
+
+
+
+
+
+
+.prp-section {
+  background-color: #ffffff;
+  color: #2B3E55;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.prp-section .title {
+  font-size: 28px;
+  color: #283f55;
+  margin-bottom: 10px;
+}
+
+.prp-info .details h3 {
+  color: #f5b942;
+}
+
+.prp-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.prp-info .details {
+  flex: 1;
+}
+
+.prp-info .details p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.prp-info .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.prp-info .details ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.prp-info .procedure-img {
+  flex: 1;
+}
+
+.prp-info .procedure-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .prp-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prp-info .details {
+    text-align: start;
+  }
+
+  .prp-info .procedure-img {
+    margin-top: 20px;
+  }
+  .prp-section .title{
+    margin-top: 20px;
+  }
+
+}
+
+
+
+
+.a2m-section {
+  background-color: #Ffffff;
+  color: #2B3E55;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.a2m-section .title {
+  font-size: 28px;
+  color: #283f55;
+  margin-bottom: 10px;
+}
+
+.a2m-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.a2m-info .details h3 {
+  color: #f5b942;
+}
+
+.a2m-info .details {
+  flex: 1;
+}
+
+.a2m-info .details p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.a2m-info .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.a2m-info .details ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.a2m-info .procedure-img {
+  flex: 1;
+}
+
+.a2m-info .procedure-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .a2m-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .a2m-section{
+    padding-top: 0px;
+  }
+
+  .a2m-info .details {
+    text-align: start;
+  }
+
+  .a2m-info .procedure-img {
+    margin-top: 20px;
+  }
+  .a2m-section .title{
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+.dextrose-section {
+  background-color: #Ffffff;
+  color: #2B3E55;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.dextrose-section .title {
+  font-size: 32px;
+  color: #283f55;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.dextrose-section .icon {
+  font-size: 40px;
+  color: #283f55;
+  margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .dextrose-section .title {
+    font-size: 28px;
+  }
+
+  .dextrose-section .icon {
+    font-size: 30px;
+  }
+
+  .dextrose-section{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+
+
+
+
+
+.prolotherapy-section {
+  background-color: #Ffffff;
+  color: #2B3E55;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.prolotherapy-section .title {
+  font-size: 32px;
+  color: #283f55;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.prolotherapy-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.prolotherapy-info .details h3 {
+  color: #f5b942;
+}
+
+.prolotherapy-info .details {
+  flex: 1;
+  text-align: left;
+}
+
+.prolotherapy-info .details p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.prolotherapy-info .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.prolotherapy-info .details ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.prolotherapy-info .procedure-img {
+  flex: 1;
+}
+
+.prolotherapy-info .procedure-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .prolotherapy-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  
+.prolotherapy-section{
+  padding: 0px 20px;
+}
+  .prolotherapy-info .details {
+    text-align: start;
+  }
+
+  .prolotherapy-info .procedure-img {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+.neural-therapy-section {
+  background-color: #Ffffff;
+  color: #2B3E55;
+  padding: 40px 20px;
+  text-align: start;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.neural-therapy-section .title {
+  font-size: 32px;
+  color: #283f55;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.neural-therapy-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.neural-therapy-info .details h3 {
+  color: #f5b942;
+}
+
+.neural-therapy-info .details {
+  flex: 1;
+  text-align: left;
+}
+
+.neural-therapy-info .details p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.neural-therapy-info .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.neural-therapy-info .details ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.neural-therapy-info .procedure-img {
+  flex: 1;
+}
+
+.neural-therapy-info .procedure-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .neural-therapy-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .neural-therapy-info .details {
+    text-align: start;
+  }
+
+  .neural-therapy-info .procedure-img {
+    margin-top: 20px;
+    
+  }
+  .neural-therapy-info .procedure-img img {
+    margin-bottom: 20px
+  }
+  .neural-therapy-section .title{
+    padding-top: 20px;
+  }
+}
+
+
+
+
+
+.trigger-point-section {
+  background-color: #Ffffff;
+  color: #2B3E55;
+  padding: 40px 20px;
+  text-align: start;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.trigger-point-section .title {
+  font-size: 32px;
+  color: #283f55;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.trigger-point-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.trigger-point-info .details h3 {
+  color: #f5b942;
+}
+
+.trigger-point-info .details {
+  flex: 1;
+  text-align: left;
+}
+
+.trigger-point-info .details p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.trigger-point-info .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.trigger-point-info .details ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.trigger-point-info .procedure-img {
+  flex: 1;
+}
+
+.trigger-point-info .procedure-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .trigger-point-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .trigger-point-section{
+    padding: 0px 20px;
+  }
+
+  .trigger-point-info .details {
+    text-align: start;
+  }
+
+  .trigger-point-info .procedure-img {
+    margin-top: 20px;
+  }
+  .trigger-point-section .title{
+    padding-top: 20px;
+  }
+  
+}
+
+
+
+
+
+.hyaluronic-acid-section {
+  background-color: #Ffffff;
+  color: #2B3E55;
+  padding: 40px 20px;
+  text-align: start;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hyaluronic-acid-section .title {
+  font-size: 32px;
+  color: #283f55;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hyaluronic-acid-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.hyaluronic-acid-info .details h3 {
+  color: #f5b942;
+}
+
+
+.hyaluronic-acid-info .details {
+  flex: 1;
+  text-align: left;
+}
+
+.hyaluronic-acid-info .details p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hyaluronic-acid-info .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hyaluronic-acid-info .details ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.hyaluronic-acid-info .procedure-img {
+  flex: 1;
+}
+
+.hyaluronic-acid-info .procedure-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .hyaluronic-acid-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hyaluronic-acid-section .title{
+    padding-top: 20px;
+  }
+  .hyaluronic-acid-section{
+    padding: 0px 20px;
+  }
+
+  .hyaluronic-acid-info .details {
+    text-align: start;
+  }
+
+  .hyaluronic-acid-info .procedure-img {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+.steroids-section {
+  background-color: #Ffffff;
+  color: #2B3E55;
+  padding: 40px 20px;
+  text-align: start;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.steroids-section .title {
+  font-size: 32px;
+  color: #283f55;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.steroids-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.steroids-info .details {
+  flex: 1;
+  text-align: left;
+}
+
+
+.steroids-info .details h3 {
+  color: #f5b942;
+}
+
+.steroids-info .details p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.steroids-info .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.steroids-info .details ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.steroids-info .procedure-img {
+  flex: 1;
+}
+
+.steroids-info .procedure-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .steroids-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steroids-info .details {
+    text-align: start;
+  }
+
+  .steroids-info .procedure-img {
+    margin-top: 20px;
+  }
+  .steroids-section .title{
+    padding-top: 20px;
+  }
+}
+
+
+
+
+
+
+/* Physical Medicine */
+
+
+
+
+.physical-medicine-section {
+  background-color: #2A4472;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.physical-medicine-section .title {
+  font-size: 45px;
+  color: #c6930a;
+  font-weight: bold;
+}
+
+.physical-medicine-section .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.physical-medicine-section .text-content {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.physical-medicine-section .text-content h3 {
+  font-size: 35px;
+  color: #c6930a;
+}
+
+.physical-medicine-section .text-content p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.physical-medicine-section .image-content {
+  flex: 1;
+  text-align: center;
+}
+
+.physical-medicine-section .image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cta-button {
+  background-color: #c6930a;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #2A4472;
+}
+
+@media (max-width: 768px) {
+  .physical-medicine-section .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .physical-medicine-section{
+    text-align: start;
+    padding-right: 0px;
+    /* padding-left: 0px; */
+  }
+
+  .physical-medicine-section .text-content p{
+    margin: 0;
+    font-size: 18px;
+  }
+  .physical-medicine-section .content{
+    padding: 0px 10px;
+  }
+
+  .physical-medicine-section .text-content {
+    text-align: start;
+    padding-left: 0;
+  }
+
+  .physical-medicine-section .cta-button {
+    width: 80%;
+  }
+}
+
+
+
+
+.adjustments-section {
+  background-color: #Ffffff;
+  color: #2B3E55;
+  padding: 40px 20px;
+  text-align: start;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.adjustments-section .title {
+  font-size: 32px;
+  color: #2A4472;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.adjustments-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.adjustments-info .details {
+  flex: 1;
+  text-align: left;
+}
+
+.adjustments-info .details h3 {
+  color: #f5b942;
+  font-size: 25px;
+}
+
+.adjustments-info .details p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.adjustments-info .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.adjustments-info .details ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.adjustments-info .procedure-img {
+  flex: 1;
+}
+
+.adjustments-info .procedure-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cta-button {
+  background-color: #c6930a;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+
+
+@media (max-width: 768px) {
+  .adjustments-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adjustments-info .details {
+    text-align: start;
+  }
+
+  .adjustments-info .procedure-img {
+    margin-top: 20px;
+  }
+
+  .cta-button {
+    width: 80%;
+  }
+}
+
+
+
+
+
+
+
+
+.corrective-exercise-section {
+  background-color: #Ffffff;
+  color: #2B3E55;
+  padding: 40px 20px;
+  text-align: start;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.corrective-exercise-section .title {
+  font-size: 32px;
+  color: #2A4472;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.corrective-exercise-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.corrective-exercise-info .details h3 {
+  font-size: 25px;
+  color: #c6930a;
+}
+
+.corrective-exercise-info .details {
+  flex: 1;
+  text-align: left;
+}
+
+.corrective-exercise-info .details p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.corrective-exercise-info .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.corrective-exercise-info .details ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.corrective-exercise-info .procedure-img {
+  flex: 1;
+}
+
+.corrective-exercise-info .procedure-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cta-button {
+  background-color: #c6930a;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #2A4472;
+}
+
+@media (max-width: 768px) {
+  .corrective-exercise-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .corrective-exercise-section{
+    padding-top: 0;
+  }
+  .corrective-exercise-section .title{
+    padding-top: 20px;
+  }
+
+  .corrective-exercise-info .details {
+    text-align: start;
+  }
+
+  .corrective-exercise-info .procedure-img {
+    margin-top: 20px;
+  }
+
+  .cta-button {
+    width: 80%;
+  }
+}
+
+
+
+
+
+
+
+/* Physiomodalities Service */
+
+
+
+
+.section-wrapper {
+  background-color: #2A4472;
+  padding: 60px 20px;
+  color: white;
+}
+
+.section-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #c6930a;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-text {
+  font-size: 20px;
+  line-height: 1.8;
+  color: white;
+}
+
+.section-text::first-letter {
+  font-size: 40px;
+  font-weight: bold;
+  color: #c6930a;
+  float: left;
+  line-height: 1;
+  padding-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .section-text {
+    font-size: 18px;
+  }
+  .section-wrapper{
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 30px;
+    
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+.therapy-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  padding-bottom: 10px;
+  text-align: start;
+}
+
+.therapy-image {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto 30px;
+  display: block;
+}
+
+.therapy-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2A4472;
+}
+
+.therapy-section {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.therapy-subtitle {
+  color: #c6930a;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.therapy-description {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #2A4472;
+}
+
+@media (max-width: 768px) {
+  .therapy-heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .therapy-subtitle {
+    font-size: 16px;
+  }
+
+  .therapy-description {
+    font-size: 16px;
+  }
+  .therapy-container {
+    padding-top: 20px;
+  }
+  .therapy-image{
+    margin-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .therapy-heading {
+    font-size: 26px;
+  }
+
+  .therapy-subtitle {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+.bio-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  padding-top: 0px;
+  text-align: start;
+}
+
+.bio-image {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto 30px;
+  display: block;
+}
+
+.bio-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2A4472;
+}
+
+.bio-content {
+  text-align: left;
+}
+
+.bio-subtitle {
+  color: #c6930a;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.bio-text,
+.bio-list {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #2A4472;
+}
+
+.bio-list ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.bio-list li {
+  margin-bottom: 12px;
+}
+
+.bio-list strong {
+  color: #2A4472;
+}
+
+@media (max-width: 768px) {
+  .bio-heading {
+    font-size: 30px;
+  }
+  .bio-section{
+    padding-bottom: 0px;
+  }
+
+  .bio-subtitle {
+    font-size: 16px;
+  }
+
+  .bio-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bio-heading {
+    font-size: 26px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.interferential-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: start;
+}
+
+.interferential-image {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto 30px;
+  display: block;
+}
+
+.interferential-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2A4472;
+}
+
+.interferential-content {
+  text-align: left;
+  
+}
+
+.interferential-section .laser-content-box .laser-subtitle {
+  color: #c6930a;
+}
+
+.interferential-subtitle {
+  color: #c6930a;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.interferential-text {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #2A4472;
+}
+
+@media (max-width: 768px) {
+  .interferential-heading {
+    font-size: 30px;
+  }
+
+  .interferential-subtitle {
+    font-size: 10px;
+  }
+
+  .interferential-text {
+    font-size: 16px;
+  }
+  .interferential-section{
+    padding-top: 20px;
+  }
+  .interferential-section {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .interferential-heading {
+    font-size: 26px;
+  }
+}
+
+
+
+
+
+.laser-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.laser-content {
+  flex: 1 1 550px;
+}
+
+.laser-heading {
+  font-size: 38px;
+  font-weight: 700;
+  color: #2A4472;
+  margin-bottom: 20px;
+}
+
+.laser-subtitle {
+  color: #c6930a;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0 8px;
+}
+
+.laser-subtitle {
+  color: #c6930a;
+}
+
+.laser-content-box  .laser-text{
+  color: #2A4472;
+}
+
+.laser-text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #2A4472;
+}
+
+.laser-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.laser-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .laser-heading {
+    font-size: 30px;
+  }
+
+  .laser-subtitle {
+    font-size: 16px;
+  }
+
+  .laser-text {
+    font-size: 16px;
+  }
+
+  .laser-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .laser-content {
+    text-align: left;
+  }
+  .laser-subtitle{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .laser-heading {
+    font-size: 26px;
+  }
+
+}
+
+
+
+
+
+
+
+.laser-section {
+  padding: 60px 20px;
+}
+
+.laser-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.laser-content {
+  flex: 1 1 500px;
+}
+
+.laser-heading {
+  font-size: 36px;
+  color: #2A4472;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.laser-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #2A4472;
+}
+
+.label {
+  color: #b8860b;
+  font-weight: 600;
+}
+
+.laser-photo {
+  flex: 1 1 500px;
+  text-align: center;
+}
+
+.laser-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.laser-content-box {
+  margin-top: 30px;
+}
+
+.laser-subtitle {
+  font-weight: 700;
+  color: #1e3a8a;
+  font-size: 20px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.laser-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+
+/* Responsive Behavior */
+@media screen and (max-width: 768px) {
+  .laser-wrapper {
+    flex-direction: column;
+  }
+  .laser-content p{
+    margin-top: 0;
+  }
+  .laser-section{
+    padding-top: 0;
+  }
+
+  .laser-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .laser-photo {
+    margin-top: 10px;
+  }
+  .label{
+    font-size: 1.1rem;
+  }
+  
+.laser-photo {
+  flex: 1 1 100px;
+}
+.laser-section{
+  padding-bottom: 10px;
+}
+}
+
+
+
+
+
+
+
+
+/* TCM SECTION STYLING */
+
+
+
+
+
+.tcm-section {
+  background-color: #243b64;
+  /* dark blue from 2nd screenshot */
+  padding: 20px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tcm-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tcm-title {
+  font-size: 2.9rem;
+  font-weight: 700;
+  color: #c59f2e;
+  /* golden title */
+  margin-bottom: 17px;
+  line-height: 1.4;
+}
+
+.tcm-paragraph {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.tcm-dropcap {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #c59f2e;
+  float: left;
+  line-height: 1;
+  padding-right: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tcm-title {
+    font-size: 2rem;
+  }
+
+  .tcm-paragraph {
+    font-size: 1rem;
+  }
+
+  .tcm-dropcap {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+.acupuncture-section {
+  text-align: start;
+  padding: 20px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.acu-img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.acu-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.acu-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2A4472;
+  /* margin-bottom: 10px; */
+}
+
+.acu-subheading {
+  color: #e1b645;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 25px 0 10px;
+  text-align: left;
+}
+
+.acu-text {
+  font-size: 1.2rem;
+  color: #2A4472;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .acu-title {
+    font-size: 2rem;
+    margin-top: 0px;
+  }
+
+  .acu-subheading {
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 8px 0 10px;
+  }
+
+  .acu-text {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.gua-section {
+  text-align: start;
+  padding: 10px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gua-img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.gua-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gua-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2A4472;
+  margin-bottom: 5px;
+}
+
+.gua-subheading {
+  color: #e1b645;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 25px 0 10px;
+  text-align: left;
+}
+
+.gua-text {
+  font-size: 1.2rem;
+  color: #2A4472;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .gua-title {
+    font-size: 2rem;
+  }
+
+  .gua-subheading {
+    font-size: 1.1rem;
+    text-align: left;
+     margin: 5px 0 10px;
+  }
+
+  .gua-text {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+
+
+
+.cupping-section {
+  text-align: start;
+  padding: 20px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cupping-img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.cupping-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cupping-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2A4472;
+  margin-bottom: 5px;
+}
+
+.cupping-subheading {
+  color: #e1b645;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 25px 0 10px;
+  text-align: left;
+}
+
+.cupping-text {
+  font-size: 1.2rem;
+  color: #2A4472;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .cupping-title {
+    font-size: 2rem;
+  }
+
+  .cupping-subheading {
+    font-size: 1.1rem;
+    margin: 10px 0 10px;
+  }
+
+  .cupping-text {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+
+
+.aesthetics-section {
+  background-color: #1d3050; /* dark blue */
+  color: white;
+  padding: 15px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.aesthetics-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.aesthetics-heading {
+  text-align: center;
+  font-size: 2.7rem;
+  color: #d4af37; /* gold */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.aesthetics-paragraph {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.aesthetics-dropcap {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d4af37;
+  float: left;
+  line-height: 1;
+  padding-right: 8px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .aesthetics-heading {
+    font-size: 2rem;
+  }
+
+  .aesthetics-paragraph {
+    font-size: 1rem;
+  }
+
+  .aesthetics-dropcap {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+.micro-section {
+  padding: 20px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1d3050;
+}
+
+.micro-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.micro-img-wrapper {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.micro-img {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.micro-title {
+  font-size: 2.7rem;
+  color: #1d3050;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.micro-subtitle {
+  font-size: 1.8rem;
+  color: #c89c00; /* golden yellow */
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.micro-paragraph {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.micro-list {
+  padding-left: 20px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #1d3050;
+  margin-bottom: 20px;
+}
+
+.micro-link {
+  color: #e56376;
+  text-decoration: none;
+}
+
+.micro-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .micro-title {
+    font-size: 2rem;
+  }
+
+  .micro-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .micro-paragraph,
+  .micro-list {
+    font-size: 1rem;
+  }
+}
